@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Bookings</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <table>
+        <% bookings.forEach( function(booking) { %>
+
+            <tr>
+                <td>
+                    <%= booking.gender %>
+                </td>
+                <td>
+                    <%= booking.payment %>
+                </td>
+                <td>
+                    <%= booking.degree %>
+                </td>
+                <td>
+                    <%= booking.element %>
+                </td>
+                <td>
+                    <%= booking.time %>
+                </td>
+            </tr>
+
+            <% }); %>
+    </table>
+</body>
+
+</html>
